@@ -1,0 +1,12 @@
+<div class="project-cover">
+  <img src="url({{folder}}/images/{{images.[0]}})">
+</div>
+<div class="project-description">
+    <h1>{{project.[0].name}}</h1>
+    <h2>{{project.[0].description}}</h2>
+</div>
+{{#each project.[0].images}}
+  <li class="image num{{@index}}" data-project-index="{{@../index}}">
+    <div class="images" data-background="background-image: url({{../folder}}/images/{{this}})"></div>
+  </li>
+{{/each}}

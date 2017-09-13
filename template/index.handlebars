@@ -1,0 +1,13 @@
+<li style="background-color:#333333" class="image project-cover">
+    <div class="project-description">
+        <h1>I'm Frank Hulley-Jones. A digital designer working at the Guardian.</h1>
+        <h2>I currently don't have a H2 right?</h2>
+    </div>
+  </li>
+{{#each project}}
+    <li class="image num{{@index}}" data-project-index="{{@index}}">
+      <a href="/build/{{properties.[1]}}.html"></a>
+      <div class="images {{properties.[6]}}" style="background-image: url({{folder}}/images/{{images.[0]}})"></div>
+      <h1 class="project-title" style="color: {{properties.[5]}}">{{name}} | {{properties.[2]}}</h1>
+    </li>
+{{/each}}
