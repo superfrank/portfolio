@@ -110,5 +110,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-browser-sync');
 	grunt.registerTask('default',['execute', 'sass', /* 'ftp-deploy', */ 'clean', 'compile-handlebars', 'copy', 'browserSync', 'watch']);
 	grunt.registerTask('cleaner', ['clean']);
-	grunt.registerTask('compile', ['execute', 'clean', 'compile-handlebars', 'copy']);
+	grunt.registerTask('compile', ['execute', 'sass', 'clean', 'compile-handlebars', 'copy']);
 }

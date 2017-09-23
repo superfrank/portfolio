@@ -1,357 +1,148 @@
-/*
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com
-Twitter: @rich_clark
-*/
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent; }
+@font-face {
+  font-family: 'GT-Pressura-Regular';
+  src: url("fonts/lineto-circular-pro-book.eot");
+  src: url("fonts/GT-Pressura-Regular.woff") format("woff"), url("fonts/GT-Pressura-Regular.ttf") format("truetype"), url("fonts/GT-Pressura-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.title {
+  margin: 20px 0;
+  color: #FF6C6A;
+  font-family: "GT-Pressura-Regular", "Futura", sans-serif;
+  font-size: 4.4rem; }
+  @media all and (max-width: 19.99em) {
+    .title {
+      font-size: 3.2rem; } }
+
+p,
+.paragraph {
+  margin-bottom: 12px;
+  color: #666666;
+  font-size: 1.6rem;
+  line-height: 2.6rem; }
+
+html {
+  font-size: 62.5%; }
 
 body {
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-nav ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
+  margin: 0px;
+  font-family: "ff-tisa-web-pro", Georgia, serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; }
 
 a {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent; }
-
-/* change colours to suit your needs */
-ins {
-  background-color: #ff9;
-  color: #000;
-  text-decoration: none; }
-
-/* change colours to suit your needs */
-mark {
-  background-color: #ff9;
-  color: #000;
-  font-style: italic;
-  font-weight: bold; }
-
-del {
-  text-decoration: line-through; }
-
-abbr[title], dfn[title] {
-  border-bottom: 1px dotted;
-  cursor: help; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-/* change border colour to suit your needs */
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #cccccc;
-  margin: 1em 0;
-  padding: 0; }
-
-input, select {
-  vertical-align: middle; }
-
-body {
-  overflow: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: 'circularbold'; }
-  @media all and (min-width: 61.25em) {
-    body {
-      overflow: hidden; } }
-  @media all and (max-width: 46.24em) {
-    body {
-      letter-spacing: -1px; } }
-
-h2 {
-  font-size: 26px;
-  line-height: 28px; }
-
-a {
-  color: #ff8181;
-  border-bottom: 2px solid white;
+  color: #FF6C6A;
   text-decoration: none; }
   a:hover {
-    border-bottom: 2px solid #ff8181; }
+    color: #333333; }
+  a:active {
+    position: relative;
+    top: 1px; }
 
-.header {
-  height: 80px;
+main {
+  padding-top: 20px; }
+
+.wrapper {
+  overflow: auto;
+  padding: 0px;
+  margin: 0px;
   width: 100%;
-  z-index: 10000;
-  font-weight: 900;
-  font-size: 18px;
-  line-height: 20px;
-  color: white;
-  background-color: #2C2C2C;
-  margin-bottom: -1px; }
+  -webkit-transition-duration: 250ms;
+  -moz-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
+  transition-duration: 250ms; }
   @media all and (min-width: 61.25em) {
-    .header {
-      background-color: transparent;
-      position: fixed; } }
-  .header .name {
-    left: 2%;
-    top: 10px;
-    color: #fff;
-    position: absolute;
-    font-size: 26px;
-    line-height: 28px; }
-    @media all and (min-width: 61.25em) {
-      .header .name {
-        color: #fff;
-        position: fixed;
-        font-size: 18px;
-        line-height: 18px; } }
-    .header .name .sub {
-      color: green; }
-    .header .name svg {
-      width: 40px;
-      height: auto; }
-  .header .about {
-    right: 2%;
-    top: 10px;
-    position: absolute;
-    color: #fff;
-    display: none; }
-    @media all and (min-width: 61.25em) {
-      .header .about {
-        color: #d6d6d6;
-        font-size: 18px;
-        line-height: 18px; } }
-  .header.white .about, .header.white .name {
-    color: white; }
+    .wrapper {
+      width: 980px; } }
+  @media all and (min-width: 81.25em) {
+    .wrapper {
+      width: 1300px; } }
 
-.portfolio-left, .portfolio-right {
-  cursor: pointer;
-  display: none; }
-  .portfolio-left svg path, .portfolio-right svg path {
-    fill: #d6d6d6; }
-  @media all and (min-width: 61.25em) {
-    .portfolio-left, .portfolio-right {
-      display: block; } }
+::selection {
+  background-color: yellow;
+  color: #666666; }
 
-.portfolio-right {
-  position: absolute;
-  right: 0;
-  width: 60px;
+header {
+  display: flex;
+  justify-content: center;
+  z-index: 10;
   top: 0;
-  bottom: 0;
-  z-index: 9999; }
-  .portfolio-right svg {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: rotate(180deg) translate(-50%, -50%); }
-
-.portfolio-left {
-  position: absolute;
-  left: 0;
-  width: 60px;
-  top: 0;
-  bottom: 0;
-  z-index: 9999; }
-  .portfolio-left svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-
-.menu--container {
-  float: left;
-  margin-left: 1vw; }
-  .menu--container li {
-    list-style: none;
-    cursor: pointer; }
-
-.list--container li {
-  opacity: 1;
-  position: relative; }
-  @media all and (min-width: 61.25em) {
-    .list--container li {
-      list-style: none;
-      height: 100vh;
-      position: absolute;
-      width: 100%;
-      transition: left 0.7s ease-in-out;
-      left: 100vw; } }
-  .list--container li.project-cover {
-    height: 35vh; }
-    @media all and (min-width: 61.25em) {
-      .list--container li.project-cover {
-        height: 100vh; } }
-  .list--container li.visible {
-    left: 0; }
-    .list--container li.visible h1.project-title {
-      opacity: 1;
-      bottom: 10px; }
-    .list--container li.visible .project-description {
-      opacity: 1;
-      top: 70px; }
-  .list--container li.left {
-    left: -100vw; }
-  .list--container li.clicked {
-    opacity: 1; }
-  .list--container li .images {
-    height: 60vh;
-    background-size: 180%;
-    background-position: center center;
-    margin-top: -17px; }
-    @media all and (min-width: 61.25em) {
-      .list--container li .images {
-        height: 100vh;
-        margin-top: 0;
-        background-size: cover; } }
-    .list--container li .images.zoomed {
-      background-size: 240%; }
-      @media all and (min-width: 61.25em) {
-        .list--container li .images.zoomed {
-          background-size: cover; } }
-  .list--container li .project-description {
-    transition: all 200ms ease-in-out;
-    width: 90%;
-    bottom: 10px;
-    left: 10px;
-    position: absolute; }
-    @media all and (min-width: 61.25em) {
-      .list--container li .project-description {
-        opacity: 0;
-        max-width: 630px;
-        top: 60px;
-        left: 28px;
-        position: fixed; } }
-    .list--container li .project-description h1 {
-      font-size: 26px;
-      line-height: 28px; }
-      @media all and (min-width: 61.25em) {
-        .list--container li .project-description h1 {
-          font-size: 44px;
-          line-height: 44px; } }
-    .list--container li .project-description h2 {
-      font-size: 26px;
-      line-height: 28px; }
-      @media all and (min-width: 61.25em) {
-        .list--container li .project-description h2 {
-          font-size: 44px;
-          line-height: 44px; } }
-    .list--container li .project-description h1 {
-      color: #FF6C6A; }
-    .list--container li .project-description h2 {
-      color: #fff; }
-  .list--container li .description {
-    position: absolute;
-    bottom: 10px; }
-  .list--container li h1.project-title {
-    left: 10px;
-    bottom: 10px;
-    position: absolute;
-    z-index: 1;
-    opacity: 1;
-    font-size: 20px; }
-    @media all and (min-width: 61.25em) {
-      .list--container li h1.project-title {
-        position: fixed;
-        bottom: 0px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        opacity: 0;
-        transition: all 200ms ease-in-out;
-        font-size: 18px; } }
-
-.list--description {
   width: 100%;
-  position: absolute;
-  z-index: 2000;
-  bottom: 0px;
-  height: 50px; }
-  .list--description .description--container {
-    position: relative; }
-  .list--description.white li {
-    color: white; }
-  .list--description li {
-    opacity: 0;
-    position: absolute;
-    top: 0px;
-    left: 1.2%;
-    list-style: none; }
-    .list--description li.clicked {
-      opacity: 1; }
-    .list--description li .description--wrapper span {
-      display: block; }
+  border-bottom: 1px solid #EEEEEE;
+  height: 100%;
+  background-color: white; }
 
-.list--menu {
-  position: absolute;
-  bottom: 20px;
-  overflow: hidden;
-  width: 100%; }
-  .list--menu ul {
-    overflow: hidden;
-    width: max-content;
-    margin-left: auto;
-    margin-right: auto;
-    list-style: none; }
-  .list--menu li {
+.logo {
+  margin: 0;
+  height: 44px;
+  padding-top: 12px;
+  display: flex;
+  justify-content: center; }
+  .logo svg {
+    width: 79px;
+    height: 32px; }
+  .logo .logo__frame, .logo .logo__eyes {
+    fill: #FCFCFC; }
+  @media all and (min-width: 46.25em) {
+    .logo .logo__frame, .logo .logo__eyes {
+      fill: #FF6C6A; } }
+  .logo:hover svg {
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    display: none;
+    transition: ease-out; }
+  .logo:hover .logo-type {
+    display: block; }
+  .logo .logo-type {
+    display: none;
+    font-family: "GT-Pressura-Regular", "Futura", sans-serif;
+    font-size: 1.8rem;
+    color: #FCFCFC;
+    text-decoration: none; }
+    @media all and (min-width: 46.25em) {
+      .logo .logo-type {
+        color: #FF6C6A; } }
+
+.site-nav {
+  height: 56px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #FF6C6A;
+  display: block; }
+  @media all and (min-width: 46.25em) {
+    .site-nav {
+      background-color: white; } }
+
+.site-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "GT-Pressura-Regular", "Futura", sans-serif;
+  font-size: 1.8rem; }
+  @media all and (min-width: 46.25em) {
+    .site-nav__list {
+      display: block;
+      position: fixed;
+      top: 2px; } }
+  .site-nav__list .site-nav__item {
     float: left;
-    cursor: pointer; }
+    color: #FF6C6A;
+    cursor: pointer;
+    padding: 16px 0;
+    width: 33%;
+    text-align: center;
+    border-bottom: none; }
+    @media all and (min-width: 46.25em) {
+      .site-nav__list .site-nav__item {
+        width: 72px;
+        padding: 0px; } }
+    .site-nav__list .site-nav__item:hover {
+      text-decoration: underline; }
 
-@font-face {
-  font-family: 'circularbook';
-  src: url("fonts/lineto-circular-pro-book.eot");
-  src: url("fonts/lineto-circular-pro-book.eot?#iefix") format("embedded-opentype"), url("fonts/lineto-circular-pro-book.woff") format("woff"), url("fonts/lineto-circular-pro-book.ttf") format("truetype"), url("fonts/lineto-circular-pro-book.svg#circularbook") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'circularbold';
-  src: url("fonts/lineto-circular-pro-bold.eot");
-  src: url("fonts/lineto-circular-pro-bold?#iefix") format("embedded-opentype"), url("fonts/lineto-circular-pro-bold.woff") format("woff"), url("fonts/lineto-circular-pro-bold.ttf") format("truetype"), url("fonts/lineto-circular-pro-bold.svg#circularbold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'aperculight';
-  src: url("fonts/apercu_light-webfont.woff2") format("woff2"), url("fonts/apercu_light-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'aktiv_groteskbold';
-  src: url("fonts/aktivgroteskbold-webfont.woff2") format("woff2"), url("fonts/aktivgroteskbold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
+h1 {
+  color: #FF6C6A;
+  font-family: "GT-Pressura-Regular", "Futura", sans-serif;
+  -webkit-font-smoothing: antialiased; }
