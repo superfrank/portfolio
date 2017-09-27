@@ -1,0 +1,25 @@
+.page-info {
+    margin:0;
+    background-color: $brand-1;
+    text-align: left;
+    display:block;
+}
+
+.info__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info__social {
+  a {
+    fill: white;
+    margin-right: 12px;
+  }
+}
+
+.contentinfo__copyright {
+  font-size: $font-size-body;
+  color: $white;
+  flex: 0 0 auto;
+}

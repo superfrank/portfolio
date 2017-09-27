@@ -4,7 +4,7 @@ html {
 
 body {
     margin: 0px;
-    font-family: $serif;
+    font-family: $sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
@@ -14,12 +14,33 @@ a {
     text-decoration: none;
 
     &:hover {
-        color: $black;
+      background-image: linear-gradient(0deg,#FFFFFF 100%,#FFFFFF 0%);
+      background-repeat: repeat-x;
+      background-position: 0 92%;
+      background-color: transparent;
+      background-size: 200% 2px;
+      text-decoration: none;
+
     }
 
     &:active {
         position: relative;
         top: 1px;
+    }
+}
+
+.bg-link {
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      background-image: linear-gradient(0deg,#FFFFFF 100%,#FFFFFF 0%);
+      background-repeat: repeat-x;
+      background-position: 0 92%;
+      background-color: transparent;
+      background-size: 200% 2px;
+      text-decoration: none;
+
     }
 }
 
@@ -29,16 +50,21 @@ main {
 
 .wrapper {
     overflow: auto;
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 96%;
+    padding-left: 2%;
+    padding-right: 2%;
     @include transition-duration(250ms);
 
+    @include mq($from: tablet) {
+    }
+
     @include mq($from: desktop) {
-        width: 980px;
+        max-width: 980px;
     }
     @include mq($from: wide) {
-        width: 1300px;
+        max-width: 1300px;
     }
 
 }
@@ -46,4 +72,8 @@ main {
 ::selection {
     background-color: yellow;
     color: $dark-grey;
+}
+
+.project-title {
+  color: black !important;
 }

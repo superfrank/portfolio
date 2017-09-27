@@ -1,13 +1,16 @@
-<li style="background-color:#ffffff" class="image project-cover">
+<!-- <li style="background-color:#ffffff" class="image project-cover">
     <div class="project-description">
         <h1></h1>
         <h2></h2>
     </div>
-  </li>
+  </li> -->
 {{#each project}}
     <li class="image num{{@index}}" data-project-index="{{@index}}">
-      <a href="/build/{{properties.[1]}}.html"></a>
-      <div class="images {{properties.[6]}}" style="background-image: url({{folder}}/images/{{images.[0]}})"></div>
-      <h1 class="project-title" style="color: {{properties.[5]}}">{{name}} | {{properties.[2]}}</h1>
+
+        <img src="{{folder}}/images/{{images.[0]}}">
+
+      {{description}}
+
+      <h1 class="project-title">{{name}} | {{properties.[2]}}</h1>
     </li>
 {{/each}}
