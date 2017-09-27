@@ -1,5 +1,10 @@
 html {
+    box-sizing: border-box;
     font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -8,6 +13,7 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
+
 
 a {
     color: $brand-1;
@@ -48,17 +54,10 @@ main {
     padding-top: 20px;
 }
 
-.wrapper {
-    overflow: auto;
-    margin-right: auto;
-    margin-left: auto;
-    width: 96%;
-    padding-left: 2%;
-    padding-right: 2%;
+.wrapper__main {
+    margin: 0 auto;
+    width: 100%;
     @include transition-duration(250ms);
-
-    @include mq($from: tablet) {
-    }
 
     @include mq($from: desktop) {
         max-width: 980px;
@@ -66,7 +65,20 @@ main {
     @include mq($from: wide) {
         max-width: 1300px;
     }
+}
 
+.wrapper__background {
+    margin: 0 auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    @include transition-duration(250ms);
+
+    @include mq($from: desktop) {
+        max-width: 980px;
+    }
+    @include mq($from: wide) {
+        max-width: 1300px;
+    }
 }
 
 ::selection {

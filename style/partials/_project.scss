@@ -1,0 +1,53 @@
+.image {
+  img {
+    width: 100%;
+  }
+}
+
+// .project {
+//     position: relative;
+//     margin: 40px auto 100px auto;
+//     @include mq($until: mobile) {
+//         display: none;
+//     }
+//
+//     .project__content {
+//         margin: 0 auto;
+//         @include transition-duration(300ms);
+//         @include mq($from: desktop) {
+//             position: absolute;
+//             top: 0;
+//             left: 0;
+//             right: 0;
+//             z-index: 2;
+//         }
+//
+//         .project__content__image {
+//             display: none;
+//             @include mq(mobile, desktop) {
+//                 display: block;
+//             }
+//         }
+//
+//         .project__content__video {
+//             width: 100%;
+//             height: auto;
+//             @include mq($until: desktop) {
+//                 display: none;
+//             }
+//         }
+//     }
+//
+//     .project__description {
+//         margin: 0 auto;
+//         width: 280px;
+//         @include transition-duration(300ms);
+//         @include mq($from: desktop) {
+//             position: absolute;
+//             top: 0;
+//             left: 0;
+//             right: 0;
+//             opacity: 0;
+//         }
+//     }
+// }
