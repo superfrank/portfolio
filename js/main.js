@@ -1,3 +1,8 @@
+
+
+
+
+
 // setTimeout(function(){
 // 	var text = $('.text__wrapper h2');
 // 	var windowHeight = $(window);

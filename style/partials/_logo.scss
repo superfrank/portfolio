@@ -15,9 +15,9 @@
     }
 
     @include mq($from: tablet) {
-        .logo__frame, .logo__eyes {
-          fill: $brand-1;
-        }
+          .logo__frame, .logo__eyes {
+            fill: $brand-1;
+          }
     }
 
     &:hover {

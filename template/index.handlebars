@@ -1,16 +1,48 @@
-<!-- <li style="background-color:#ffffff" class="image project-cover">
-    <div class="project-description">
-        <h1></h1>
-        <h2></h2>
-    </div>
-  </li> -->
-{{#each project}}
-    <li class="image num{{@index}}" data-project-index="{{@index}}">
+<!-- <div class="project-list">
+  <div class="project-list-col-1">
+    {{#each project}}
+        <li class="project{{@index}}" id="p{{@index}}" data-project-index="{{@index}}">
 
-        <img src="{{folder}}/images/{{images.[0]}}">
+          <img src="{{folder}}/images/{{images.[0]}}">
 
-      {{description}}
+          <span>
+          {{description}}
 
-      <h1 class="project-title">{{name}} | {{properties.[2]}}</h1>
-    </li>
-{{/each}}
+          <h1 class="project-title">{{name}} | {{properties.[2]}}</h1>
+          </span>
+        </li>
+    {{/each}}
+  </div>
+</div> -->
+
+
+
+
+<div class="project-list">
+  <div class="project-list-col-1">
+    {{#each project}}
+        <li class="image num{{@index}}" data-project-index="{{@index}}">
+
+            <img src="{{folder}}/images/{{images.[0]}}">
+
+          {{description}}
+
+          <h1 class="project-title">{{name}} | {{properties.[2]}}</h1>
+        </li>
+    {{/each}}
+  </div>
+</div>
+
+<!-- <div class="project-list">
+  <div class="project-list-col-1">
+      <div class="project" id="p1">1</div>
+      <div class="project" id="p2">2</div>
+      <div class="project" id="p3">3</div>
+      <div class="project" id="p4">4</div>
+  </div>
+  <div class="project-list-col-2">
+      <div class="project" id="p5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+      <div class="project" id="p6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+      <div class="project" id="p7">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+  </div>
+</div> -->

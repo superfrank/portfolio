@@ -7,7 +7,15 @@
   display: block;
 
   @include mq($from: tablet) {
-    background-color: white
+    background-color: white;
+    position: fixed;
+  }
+
+  @include mq($from: desktop) {
+      max-width: 980px;
+  }
+  @include mq($from: wide) {
+      max-width: 1300px;
   }
 }
 
@@ -38,8 +46,8 @@
         border-bottom: none;
 
         @include mq($from: tablet) {
-        width: 72px;
         padding: 0px;
+        text-align: left;
         }
 
 
