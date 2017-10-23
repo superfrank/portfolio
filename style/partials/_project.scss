@@ -1,8 +1,45 @@
-.project {
+.project-cover {
   margin-top: 100px;
   background-color: green;
-  height: 400px;
 }
 img {
+  display: block;
   width: 100%;
+}
+
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-gap: 20px 20px;
+}
+
+.project-image-container__full-width {
+  grid-column: span 2;
+  background-color: green;
+  display: grid;
+  justify-content: space-around;
+}
+
+.project-image-container__half-width {
+  grid-column: span 1;
+  background-color: red;
+  display: grid;
+  justify-content: space-around;
+}
+
+.project-image__full-width {
+  img {
+    max-width: 1200px;
+    }
+}
+
+.project-image__half-width {
+
+  padding: 20px;
+  img {
+    max-width: 300px;
+
+  }
 }
