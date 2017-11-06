@@ -11,7 +11,7 @@
         <h2>{{project.[0].description}}</h2>
     </div>
 
-    <div class="project-grid">
+    <!-- <div class="project-grid">
 
       <div class="project-image-container__full-width">
         <div class="project-image project-image__full-width">
@@ -38,7 +38,7 @@
           <img src="/images/01kerbin/images/04kerbin.gif">
         </div>
       </div>
-    </div>
+    </div> -->
 
   </div>
 
@@ -48,13 +48,13 @@
 
 
 
-  <!-- {{#each project.[0].images}}
-    <div class="project-image">
+  {{#each project.[0].images}}
+    <div class="project-image kerb-{{@index}}">
       <img src="/images/01kerbin/images/{{this}}">
     </div>
   {{/each}}
   </div>
-</div> -->
+</div>
 
 
 
