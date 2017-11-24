@@ -40,6 +40,13 @@
       </div>
     </div> -->
 
+    {{#each project.[0].images}}
+      <div class="project-image kerb-{{@index}}">
+        <img src="/images/01kerbin/images/{{this}}">
+      </div>
+    {{/each}}
+
+
   </div>
 
 </div>
@@ -48,13 +55,7 @@
 
 
 
-  {{#each project.[0].images}}
-    <div class="project-image kerb-{{@index}}">
-      <img src="/images/01kerbin/images/{{this}}">
-    </div>
-  {{/each}}
-  </div>
-</div>
+
 
 
 
